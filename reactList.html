@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>Assignment 1: Component</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <div id='app'></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+    <script type='text/babel'>
+      class LinkList extends React.Component{
+        render(){
+          return(
+            <div id="navlinks">
+              <h1>Here's a JSX Link List</h1>
+              <ul>
+                <li><a href="#nothing">Link 1</a></li>
+                <li><a href="#nothing">Link 2</a></li>
+                <li><a href="#nothing">Link 3</a></li>
+              </ul>
+            </div>
+          );
+        };
+      }
+
+      ReactDOM.render(<LinkList />, document.getElementById('app'));
+    </script>
+
+  </body>
+
+</html>
